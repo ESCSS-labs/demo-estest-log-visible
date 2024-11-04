@@ -19,8 +19,5 @@ export default defineNuxtConfig({
         target: 'esnext'
       }
     }
-  },
-  features: {
-    inlineStyles: false,
-  },
+  }
 })
