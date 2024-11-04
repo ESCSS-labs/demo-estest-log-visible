@@ -63,7 +63,7 @@ const dataList = [
 <template>
   <main id="🌀Main">
     <h1 id="🌀Main__H1">ESCSS-ESTest Error Demo (check console)</h1>
-    <h2 id="🌀Main__H2">isVisible: true (false: www.demo.com); modify in node_modules.</h2>
+    <h2 id="🌀Main__H2">isVisible: true <a  href="https://demo-estest-log-not-visible.netlify.app">(for the false version link)</a>; Modify it in the `node_modules`.</h2>
     <section id="🌀Main__X">
       <p id="🌀Main__X__P">
         type TYPES = 'undefined' | 'null' | 'array' | 'object' | 'boolean' | 'NaN' | 'number' | 'bigint' | 'string' |
@@ -93,10 +93,8 @@ const dataList = [
         </h2>
         <Button @click="ESTest(999, 'string', 'escss-estest library, any feed back to ...')" />
       </div>
-    </section>
 
-    <section id="🌀Main__X3">
-      <div id="🌀Main__X3__X" v-for="data in dataList">
+      <div id="🌀Main__X2__X" v-for="data in dataList">
         <template v-if="data.input === 999">
           <h2>
             ESTest({{ data.displayText }}, 'null')
@@ -105,7 +103,7 @@ const dataList = [
         </template>
 
         <template v-else>
-          <h2 d="🌀Main__X3__P">
+          <h2 d="🌀Main__X2__P">
             ESTest({{ data.displayText }}, 'number')
           </h2>
           <Button @click="ESTest(data.input, 'number')" />
@@ -124,6 +122,11 @@ body {
 #🌀Main__H1{
   @include text-3xl;
 }
+
+#🌀Main__H2 {
+  @include bg-green-400;
+}
+
 #🌀Main {
   width: min(100%, 600px);
   height: 100vh;
@@ -143,28 +146,11 @@ body {
 
 #🌀Main__X2 {
   @include divide-y-2;
-  @include divide-green-700;
-  @include utils_reset;
-}
-
-
-#🌀Main__X3 {
-  @include divide-y-2;
-  @include divide-orange-700;
+  @include divide-orange-600;
   @include utils_reset;
 }
 
 #🌀Main__X2__X {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include py-2;
-  @include px-4;
-  @include bg-green-400;
-}
-
-
-#🌀Main__X3__X {
   display: flex;
   justify-content: space-between;
   align-items: center;
