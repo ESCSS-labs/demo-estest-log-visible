@@ -1,6 +1,9 @@
-# Nuxt Minimal Starter
+# ESCSS-ESTest Error Demo
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![img](./public/demo.png)
+
+- [Show Error Log Demo](https://demo-estest-log-visible.netlify.app/)
+- [Do not show Error Log Demo (default)](https://demo-estest-log-not-visible.netlify.app/)
 
 ## Setup
 
