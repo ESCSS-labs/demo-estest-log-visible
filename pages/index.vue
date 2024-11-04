@@ -82,9 +82,9 @@ const dataList = [
 
       <div id="🌀Main__X2__X">
         <h2>
-          ESTest(999, 'number', [1, 2, 3])
+          ESTest(999, 'number', 123)
         </h2>
-        <Button @click="ESTest(999, 'number', [1, 2, 3])" />
+        <Button @click="ESTest(999, 'number', 123)" />
       </div>
 
       <div id="🌀Main__X2__X">
