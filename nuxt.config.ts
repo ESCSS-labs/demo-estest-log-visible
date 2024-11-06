@@ -27,8 +27,5 @@ export default defineNuxtConfig({
         { rel: 'icon', href: '/escss.svg' }
       ],
     }
-  },
-  features: {
-    inlineStyles: false
   }
 })
