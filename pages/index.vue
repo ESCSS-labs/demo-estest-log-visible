@@ -62,8 +62,9 @@ const dataList = [
 
 <template>
   <main id="🌀Main">
-    <h1 id="🌀Main__H1">ESCSS-ESTest Error Demo (check console)</h1>
-    <h2 id="🌀Main__H2">isVisible: true (<a id="🌀Main__H2__A" href="https://demo-estest-log-not-visible.netlify.app">for the false version link</a>); Modify it in the `node_modules`.</h2>
+    <h1 id="🌀Main__H1">ESCSS-ESTest Error Demo</h1>
+    <h2 id="🌀Main__H2">isVisible: true (<a id="🌀Main__H2__A" href="https://demo-estest-log-not-visible.netlify.app">for the false version link</a>); This is modifying `node_modules` during development.</h2>
+    <h3 id="🌀Main__H3">Open DevTools (F12) to check error messages.</h3>
     <section id="🌀Main__X">
       <p id="🌀Main__X__P">
         type TYPES = 'undefined' | 'null' | 'array' | 'object' | 'boolean' | 'NaN' | 'number' | 'bigint' | 'string' |
@@ -125,6 +126,10 @@ body {
 
 #🌀Main__H2 {
   @include bg-green-400;
+}
+
+#🌀Main__H3 {
+  @include bg-amber-400;
 }
 
 #🌀Main {
